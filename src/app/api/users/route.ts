@@ -3,7 +3,7 @@ import { supabase, User } from '@/lib/supabase'
 
 /**
  * @swagger
- * /api/users:
+ * /users:
  *   get:
  *     summary: Obtiene todos los usuarios
  *     description: Retorna una lista de todos los usuarios registrados en el sistema. Si Supabase no está configurado, retorna datos de prueba.
@@ -68,7 +68,7 @@ export async function GET() {
 
 /**
  * @swagger
- * /api/users:
+ * /users:
  *   post:
  *     summary: Crea un nuevo usuario
  *     description: Agrega un nuevo usuario al sistema. Valida que el nombre y email sean proporcionados y que el email tenga un formato válido.
